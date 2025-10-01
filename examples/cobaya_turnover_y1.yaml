@@ -1,0 +1,42 @@
+theory:
+  classy:
+    extra_args:
+      N_ncdm: 1
+      N_ur: 2.0328
+likelihood:
+  turnover_likelihood.TurnOverDESIY1:
+    python_path: /pscratch/sd/k/kushal/DESI_Y3/
+output: /pscratch/sd/k/kushal/DESI_Y3/turnover_likelihood/chains/test
+params:
+  A_s: 2.083e-09
+  H0:
+    latex: H_0
+    prior:
+      max: 100.0
+      min: 10
+    ref:
+      dist: norm
+      loc: 67.36
+      scale: 5
+  m_ncdm: 0.05999991930682943
+  n_s: 0.9649
+  Omega_m:
+    latex: \Omega_\mathrm{m}
+    prior:
+      max: 1.0
+      min: 0.1
+    ref:
+      dist: norm
+      loc: 0.3
+      scale: 0.01
+  tau_reio: 0.0544
+sampler:
+  mcmc:
+    Rminus1_cl_stop: 0.2
+    Rminus1_stop: 0.01
+    drag: false
+    max_tries: 1000
+    measure_speeds: true
+    oversample_power: 0.4
+    proposal_scale: 1.9
+    # seed: 42

@@ -1,0 +1,11 @@
+
+# Data location and files
+path: /pscratch/sd/k/kushal/DESI_Y3/turnover_likelihood/data
+measurements_file: desi_2024_gaussian_TO_ALL_mean.txt
+cov_file: desi_2024_gaussian_TO_ALL_cov.txt
+
+# Aliases for automatic covariance matrix
+aliases: [TO]
+
+# Speed in evaluations/second
+speed: 2000 
